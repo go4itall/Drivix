@@ -20,19 +20,20 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 body{
-  background:var(--bg);
+  background:var(--bg2);
   color:var(--text);
   font-family:'DM Sans',sans-serif;
   font-size:15px;
   min-height:100vh;
+  overflow-x:hidden;
 }
+
 .shell{
   width:100%;
   min-height:100vh;
-  display:flex;
-  align-items:stretch;
-  justify-content:center;
+  display:block;
 }
+
 .device{
   width:100%;
   min-height:100vh;
@@ -44,8 +45,8 @@ body{
   display:flex;
   flex-direction:column;
   position:relative;
-  max-width:430px;
-  margin:0 auto;
+  margin:0;
+  max-width:none;
 }
 
 .screen{flex:1;overflow-y:auto;overflow-x:hidden;display:none;flex-direction:column;scrollbar-width:none;}
